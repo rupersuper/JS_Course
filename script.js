@@ -1,21 +1,11 @@
-const users = ['Аня', 'Вика', 'Катя']
-console.log(users);
-users[2] = 'Кристина';
-console.log(users);
-users[3] = 'Никита';
-console.log(users);
+for (let i = 1; i < 10; i++) {
+	console.log(`Наш баланс ${i}$`)
+}
 
-const arrLenght = users.push('Никита');
-console.log(users);
-console.log(arrLenght);
+fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+	.then((res) => res.json())
+	.then((data) => console.log(data));
 
-users.unshift('Вася');
-console.log(users);
-
-const el = users.pop();
-console.log(el);
-console.log(users);
-
-const el2 = users.shift();
-console.log(el2);
-console.log(users);
+	fetch('https://www.anapioficeandfire.com/api/characters')
+	.then((res) => res.json())
+	.then((data) => console.log(data));
