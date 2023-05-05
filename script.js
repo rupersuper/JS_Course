@@ -158,6 +158,3 @@ function canBuy1(productPrice, age, balance, haveJob = false) {
 }
 
 console.log(canBuy1(2000, 25, 1900));
-
-
-
