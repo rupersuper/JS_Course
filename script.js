@@ -1,11 +1,18 @@
-for (let i = 1; i < 10; i++) {
-	console.log(`Наш баланс ${i}$`)
+const tasks = ['Tasks 1', 'Tasks 2', 'Tasks 3'];
+console.log(tasks);
+
+for(let i = 0; i < tasks.length; i++) {
+	if (tasks[i] === 'Tasks 2') {
+		continue;
+	}
+	console.log(tasks[i]);
 }
 
-fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
-	.then((res) => res.json())
-	.then((data) => console.log(data));
+console.log('--------------------------')
 
-	fetch('https://www.anapioficeandfire.com/api/characters')
-	.then((res) => res.json())
-	.then((data) => console.log(data));
+for(let i = 0; i < tasks.length; i++) {
+	if (tasks[i] === 'Tasks 2') {
+		break;
+	}
+	console.log(tasks[i]);
+}
