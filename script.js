@@ -1,14 +1,23 @@
 // for (let i = 1; i < 5; i++) {
-// 	console.log(`Cycl 1 - ${i}`);
-// 	for(let j = 1; j < 5; j++) {
-// 		console.log(`Cycle 2 - ${j}`)
-// 	}
+// 	console.log(`Conclusion - ${i}`);
+// }
+// let i = 1;
+// while (i < 5) {
+// 	console.log(`Conclusion - ${i}`)
+// 	i++;
 // }
 
-const tasks = [[1, 'Tasks 1'], [2, 'Tasks 2']];
+const arr = [1, 4, 8, 7];
 
-for (let i = 0; i < tasks.length; i++) {
-	for(let j = 0; j < tasks[i].length; j++) {
-		console.log(tasks[i][j]);
+for (let i = 0; i < arr.length; i++) {
+	if (arr[i] > 5) {
+		break;
 	}
+	console.log(arr[i]);
+}
+
+let i = 0;
+while (arr[i] <= 5 && arr.length) {
+	console.log(arr[i]);
+	i++
 }
