@@ -20,3 +20,5 @@ const el2 = users.shift();
 console.log(el2);
 console.log(users);
 new commit
+
+commit from cons
